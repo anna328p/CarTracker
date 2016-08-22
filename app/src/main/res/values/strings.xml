@@ -4,5 +4,9 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="action_home">Home</string>
+    <string name="action_vehicles">Vehicles</string>
+    <string name="action_categories">Categories</string>
+    <string name="action_data">Stored Data</string>
     <string name="action_settings">Settings</string>
 </resources>
