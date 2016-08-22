@@ -83,7 +83,7 @@ public class Home extends AppCompatActivity
         if        (id == R.id.nav_home)   {
             startActivity(new Intent(getApplicationContext(), Home.class));
         } else if (id == R.id.nav_vehicles)  {
-
+            startActivity(new Intent(getApplicationContext(), Vehicles.class));
         } else if (id == R.id.nav_categories){
 
         } else if (id == R.id.nav_data)   {
