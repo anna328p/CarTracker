@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="xyz.dkudriavtsev.cartracker.AddVehicle"
+    tools:showIn="@layout/activity_add_vehicle">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicleName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Vehicle name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/vehicleDesc"
+        android:layout_below="@+id/vehicleName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Vehicle description" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/NumberPicker"
+        android:layout_below="@+id/odometerLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <NumberPicker
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/np6"
+            android:layout_gravity="center_horizontal" />
+
+        <NumberPicker
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/np5"
+            android:layout_gravity="center_horizontal" />
+
+        <NumberPicker
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/np4"
+            android:layout_gravity="center_horizontal" />
+
+        <NumberPicker
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/np3"
+            android:layout_gravity="center_horizontal" />
+
+        <NumberPicker
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/np2"
+            android:layout_gravity="center_horizontal" />
+
+        <NumberPicker
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/np1"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current odometer reading"
+        android:id="@+id/odometerLabel"
+        android:layout_below="@+id/vehicleDesc"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
